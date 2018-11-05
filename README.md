@@ -96,7 +96,7 @@ hotel.ratingAsStars() //=> "⭐️⭐️⭐️"
 
 ## Question 2
 
-1. Add a `toJSON()` function to your `Review` class so it returns a string of JSON similar to:
+1. Add a `toJSON()` function to your `Review` class so that `JSON.stringify(myReview)` returns a string of JSON similar to:
 
 ```json
 {
@@ -107,7 +107,9 @@ hotel.ratingAsStars() //=> "⭐️⭐️⭐️"
 }
 ```
 
-2. Add a `toJSON()` function to your `Hotel` class so it returns a string of JSON like:
+You will find [this documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify) helpful in understanding how `toJSON()` interacts with `JSON.stringify()`.
+
+2. Add a `toJSON()` function to your `Hotel` class so `JSON.stringify(myHotel)` returns a string of JSON like:
 
 ```json
 {
